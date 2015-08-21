@@ -21,7 +21,7 @@ class repoforge::params {
     'exclude'    => undef
   }
   $repoforge_testing = {
-    'enabled'    => '1',
+    'enabled'    => '0',
     'gpgcheck'   => '1',
     'baseurl'    => "http://apt.sw.be/redhat/el${os_maj_release}/en/${os_basearch}/testing",
     'mirrorlist' => "http://mirrorlist.repoforge.org/el${os_maj_release}/mirrors-rpmforge-testing",
