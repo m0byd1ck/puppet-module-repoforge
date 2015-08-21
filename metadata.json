@@ -1,0 +1,37 @@
+{
+  "name": "m0byd1ck-repoforge",
+  "version": "1.0.0",
+  "author": "m0byd1ck",
+  "summary": "RepoForge Repository",
+  "license": "Apache-2.0",
+  "source": "https://github.com/m0byd1ck/puppet-module-repoforge.git",
+  "project_page": "https://github.com/m0byd1ck/puppet-module-repoforge",
+  "issues_url": "https://github.com/m0byd1ck/puppet-module-repoforge/issues",
+  "tags": ["repoforge", "rpmforge", "rpm", "forge", "repo"],
+    "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [ "5", "6", "7" ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [ "5", "6", "7" ]
+    },
+    {
+      "operatingsystem": "Scientific",
+      "operatingsystemrelease": [ "5", "6", "7" ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": ">= 3.0.0"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": ">= 3.0.0"
+    }
+  ],
+  "description": "Setup the RepoForge package repo on Centos/RHEL et al",
+  "dependencies": []
+}
