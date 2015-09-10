@@ -63,7 +63,7 @@ class repoforge (
 
     repoforge::rpm_gpg_key{ 'repoforge':
       path   => '/etc/pki/rpm-gpg/RPM-GPG-KEY-rpmforge-dag',
-      before => yumrepo['repoforge','repoforge-extras','repoforge-testing'],
+      before => Yumrepo['repoforge','repoforge-extras','repoforge-testing'],
     }
   } else {
       notice ("Your operating system ${::operatingsystem} will not have the RepoForge repository applied")
