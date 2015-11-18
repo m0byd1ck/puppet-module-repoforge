@@ -37,7 +37,7 @@ None
 ## Usage
 
     class {'repoforge':
-        repoforge           = [
+        repoforge           => [
             'enabled'    => '1',
             'gpgcheck'   => '1',
             'baseurl'    => "http://apt.sw.be/redhat/el7/en/x86_64/rpmforge",
@@ -45,7 +45,7 @@ None
             'include'    => ['package1', 'package*'],
             'exclude'    => ['package1', 'package*']
           ],
-          repoforge_extras  = [
+          repoforge_extras  => [
             'enabled'    => '0',
             'gpgcheck'   => '1',
             'baseurl'    => "http://apt.sw.be/redhat/el7/en/x86_64/extras",
@@ -53,7 +53,7 @@ None
             'include'    => ['package1', 'package*'],
             'exclude'    => ['package1', 'package*']
           ],
-          repoforge_testing = [
+          repoforge_testing => [
             'enabled'    => '0',
             'gpgcheck'   => '1',
             'baseurl'    => "http://apt.sw.be/redhat/el7/en/x86_64/testing",
