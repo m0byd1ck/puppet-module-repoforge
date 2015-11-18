@@ -1,7 +1,13 @@
 # Optional parameters in setting up repoforge
 class repoforge::params {
 
-  $os_maj_release = $::os_maj_version
+  if $::operatingsystemmajrelease {
+    $os_maj_release = $::operatingsystemmajrelease
+  } else {
+    $os_versions    = split($::operatingsystemrelease, '[.]')
+    $os_maj_release = $os_versions[0]
+  }
+
   $os_basearch    = $::architecture
 
   $repoforge         = {
